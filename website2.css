@@ -196,6 +196,7 @@ footer .social-icons a {
 #cv img {
   width: 200px;
   height: 200px;
+  object-fit: cover;
 }
 /* Contact section background image */
 #contact {
