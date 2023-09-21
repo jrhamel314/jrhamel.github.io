@@ -1,371 +1,204 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fullscreen Overlay Navigation</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link rel="stylesheet" href="bootstrap-4">
-    <link rel="stylesheet" href="all.css">
-    <link rel="stylesheet" href="website2.css">
-  </head>
-      <body>
-        <input type="checkbox" id="dark-mode">
-        <label class="light-dark" for="dark-mode"></label>
-        <div class="background"></div>
-        <!-- Header & Navbar -->
-        <div class="container-dark-mode">
-        <header class="bg-dark fixed-top">
-          <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand fw-bold fs-3" href="#">Jackson Hamel</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="#skills">SKILLS</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="#about">ABOUT</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="#contact">CONTACT</a>
-                  </li>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <!-- Hero or Showcase Section -->
-        <section class="hero d-flex flex-column align-items-center justify-content-center">
-          <div class="text-center">
-            <h1 class="h1 benis fw-medium fst-italic black">Jackson Hamel</h1>
-            <h2 class="display-3 benis fw-bold">Mathematics & Finance <br /> Student</h2>
-            <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
-          </div>
-        </section>
-        
-        <!-- Skills Section -->
-        <section class="container py-5" id="skills">
-          <div class="row mt-4 py-3">
-            <div class="col-12 d-flex flex-column text-center justify-content-center text-white">
-              <h2>SKILLS</h2>
-              <h5 class="text-secondary fw-normal py-2 fst-italic">Continuously improving my skills and knowledge in the field.</h5>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-between mx-0">
-            <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-              <i class="d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-code nut-sack"></i>
-              <h3 class="mt-4 h4 black">Front-end Development</h3>
-              <p class="text-center black">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly interfaces, and using modern frameworks like ReactJS.</p>
-            </div>
-            <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-              <i class="d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-laptop nut-sack"></i>
-              <h3 class="mt-4 h4 black">Back-end Development</h3>
-              <p class="text-center black">Skilled in server-side programming using technologies like Node.js and Express. Experience working with databases such as MongoDB and MySQL.</p>
-            </div>
-            <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-              <i class="d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-mobile-screen-button nut-sack"></i>
-              <h3 class="mt-4 h4 black">Mobile App Development</h3>
-              <p class="text-center black">Proficient in developing mobile apps for iOS, Android, and Windows using frameworks like React Native and React JS as well as native languages such as Swift. Experienced in building engaging and intuitive mobile user interfaces.</p>
-            </div>
-            <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-              <i class="d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-chart-line nut-sack"></i>
-              <h3 class="mt-4 h4 black">Data Analytics</h3>
-              <p class="text-center black">Proficient in Python, Java, and C++. Proficient in leveraging advanced statistical tools such as Tensorflow, Keras, and Apache Spark to process large-scale datasets and deliver actionable process optimizations. Adept at applications to Machine Learnings, Deep Learning Models, and AI applications. </p>
-            </div>
-          </div>
-        </section>
-        <!-- Portfolio Section -->
-        <section class="container py-5" id="portfolio">
-          <div class="row mt-4 py-3">
-            <div class="col-12 d-flex flex-column text-center justify-content-center text-white">
-              <h2>PORTFOLIO</h2>
-              <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
-            </div>
-            <div class="row mt-5 mx-0 justify-content-center align-items-center">
-              <div class="col-lg-3 px-md-3 px-0 col-md-4 col-12 card-wrapper">
-                <div class="card mt-4">
-                  <img src="./Images/Mid_Mile.png" 
-                  class="img-fluid" alt="portfolio-img">
-                  <div class="card-body text-center">
-                    <h6 class="card-title black">Mid-Mile Routing</h6>
-                    <p class="card-text text-secondary">Python/Pandas</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-                <div class="card mt-4">
-                  <img src="./Images/lungaca1.jpeg" class="img-fluid" alt="portfolio-img">
-                  <div class="card-body text-center">
-                    <h6 class="card-title black">Lung Carcinoma Analysis</h6>
-                    <p class="card-text text-secondary">Python/Tensorflow/Keras</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-                <div class="card mt-4">
-                  <img src="./Images/CPP.png">
-                  <div class="card-body text-center">
-                    <h6 class="card-title black">Chinese Postman Problem</h6>
-                    <p class="card-text text-secondary">Python/Itertools/Pandas</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-                <div class="card mt-4">
-                  <img src="" class="img-fluid" alt="portfolio-img">
-                  <div class="card-body text-center">
-                    <h6 class="card-title black">Project 4</h6>
-                    <p class="card-text text-secondary">HTML/CSS/PHP</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-                <div class="card mt-4">
-                  <img src="" class="img-fluid" alt="portfolio-img">
-                  <div class="card-body text-center">
-                    <h6 class="card-title black">Project 5</h6>
-                    <p class="card-text text-secondary">ReactJS</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-                <div class="card mt-4">
-                  <img src="" class="img-fluid" alt="portfolio-img">
-                  <div class="card-body text-center">
-                    <h6 class="card-title black">Project 6</h6>
-                    <p class="card-text text-secondary">Python/Plotly</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- About Section -->
-        <section class="container py-5" id="about">
-          <div class="row mt-4 py-3">
-            <div class="col-12 d-flex flex-column text-center text-white">
-              <h2>ABOUT</h2>
-              <h5 class="text-secondary fw-normal py-2 fst-italic">Learn more about me, my background, and what motivates me.</h5>
-            </div>
-          </div>
-          <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-            <div class="col-9 col-md-5 text-md-end text-white">
-              <h5>Early Passion for Technology</h5>
-              <p>From an early age, I became fascinated with computers and programming. Starting with basic HTML and CSS, I gradually expanded my skills to include JavaScript and various frameworks.</p>
-            </div>
-            <div class="replacement2 hire-text text-center">
-              <h2 class="img h4 d-flex justify-content-center align-items-center nut-sack rounded-circle border border-5 border-dark-subtle"><span class="d-none d-md-block">2013-2020</span></h2>
-            </div>
-          </div>
-          <div class="row justify-content-md-end mt-5 pt-5">
-            <div class="replacement2 hire-text text-center">
-              <h2 class="img h4 d-flex justify-content-center align-items-center nut-sack rounded-circle border border-5 border-dark-subtle"><span class="d-none d-md-block">2020-2024</span></h2>
-            </div>
-            <div class="col-9 col-md-5 text-white">
-              <h5>Higher Education and Career Growth</h5>
-              <p>During my university years, I studied computer science and gained hands-on experience through internships and freelance projects. This period fueled my passion for creating innovative solutions and solving complex problems.</p>
-            </div>
-          </div>
-          <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-            <div class="col-9 col-md-5 text-md-end text-white">
-              <h5>Professional Excellence and Continuous Learning</h5>
-              <p>Throughout my career, I have consistently sought opportunities to refine my skills and stay updated with the latest technologies. I strive for excellence in every project I undertake and aim to deliver valuable and impactful results.</p>
-            </div>
-            <div class="replacement2 hire-text text-center">
-              <h2 class="img h4 d-flex justify-content-center align-items-center nut-sack rounded-circle border border-5 border-dark-subtle"><span class="d-none d-md-block">2024-Present</span></h2>
-            </div>
-          </div>
-          <div class="row justify-content-md-end mt-5 pt-5">
-            <div class="replacement2 hire-text text-center">
-              <h2 class="img h4 d-flex justify-content-center align-items-center nut-sack rounded-circle border border-5 border-dark-subtle"><span class="d-none d-md-block">Future</span></h2>
-            </div>
-            <div class="col-9 col-md-5 text-white">
-              <h5>Continuing to Make a Difference</h5>
-              <p>I am committed to leveraging my skills and expertise to contribute to meaningful projects that have a positive impact on society. I am eager to take on new challenges and collaborate with talented individuals to create innovative solutions.</p>
-            </div>
-          </div>
-          <div class="row justify-content-md-center mt-5 pt-5">
-            <div class="replacement2 hire-text">
-              <h2 class="h4 d-flex justify-content-center align-items-center nut-sack rounded-circle border border-5 border-dark-subtle"><span class="d-none d-md-block">Your<br>Next<br>Hire?</span></h2>
-            </div>
-          </div>      
-        </section>
-        <!-- Curriculum Vitae Section -->
-        <section class="container py-5 text-white" id="cv">
-          <div class="row mt-4 py-3">
-            <div class="col-12 d-flex flex-column text-center">
-              <h2>CURRICULUM VITAE</h2>
-              <h5 class="text-secondary fw-normal py-2 fst-italic">A small sampling of some of the projects I've worked on as a student of the ICS program.</h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 mt-5 order-lg-0 order-1 text-center">
-              <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="./Images/Portrait.jpg" alt="profile-img">
-              <h2 class="mt-3">Jackson Hamel</h2>
-              <ul class="list-unstyled contact-info">
-                <li><i class="fas fa-envelope me-2"></i> jrhamelinc@gmail.com</li>
-                <li><i class="fas fa-phone me-2"></i> (404) 668-2518</li>
-                <li><i class="fas fa-map-marker-alt me-2"></i> Your Address</li>
-              </ul>
-              <ul class="social-icons my-5 d-flex justify-content-center">
-                <a href="#" class="replacement1 nut-sack"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="replacement1 nut-sack"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="replacement1 nut-sack"><i class="fa-brands fa-linkedin-in"></i></a>
-              </ul>
-              <h5><u>Technical Skills</u></h5>
-              <ul class="list-unstyled">
-                <li>HTML <i class="fas fa-wheelchair"></i></li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <!-- Add or remove skills as needed -->
-              </ul>
-              <h5><u>Personal Interests</u></h5>
-              <ul class="list-unstyled">
-                <li>Reading</li>
-                <li>Hiking</li>
-                <li>Puzzles</li>
-                <!-- Add or remove interests as needed -->
-              </ul>
-            </div>
-            <div class="col-lg-7 order-lg-1 order-0 mt-5 text-start">
-              <h3>Profile</h3>
-              <hr class="white">
-              <p>Write a brief description of yourself, your background, and your goals. Highlight your key strengths and experiences.</p>
-              <h3>Highlights of Qualifications</h3>
-              <hr class="white">
-              <ul>
-                <li>Certified in Responsive Web Design</li>
-                <li>Qualification 2</li>
-                <li>Qualification 3</li>
-                <!-- Add or remove qualifications as needed -->
-              </ul>
-              <h3>Education</h3>
-              <hr class="white">
-              <dl>
-                <dt>2020 - 2024</dt>
-                <dd>University of Georgia</dd>
-                <dd>Mathematics</dd>
-              </dl>
-              <h3>Relavent Coursework</h3>
-              <hr class="white">
-              <ul>
-                <li>Mathematics of Option Pricing</li>
-                <li>Probability</li>
-                <li>Industrial Mathematics</li>
-              </ul>
-              <h3>Work Experience</h3>
-              <hr class="white">
-              <dl>
-                <dt>Year - Year</dt>
-                <dd>Job Position</dd>
-                <dd>Company/Organization</dd>
-                <!-- Add or remove work experience entries as needed -->
-              </dl>
-              <h3>Extracurricular Activities</h3>
-              <hr class="white">
-              <dl>
-                <dt>Organization Name</dt>
-                <dd>Role/Position</dd>
-                <dd>Details of your involvement and contributions</dd>
-              </dl>
-            </div>
-          </div>      
-        </section>
-         <!-- Contact Section -->
-         <section class="py-5" id="contact">
-          <div class="container-xxl py-5">
-            <div class="col-12 d-flex flex-column text-center justify-content-center">
-              <h2 class="text-white">CONTACT ME</h2>
-              <h5 class="text-white fw-normal py-2 fst-italic">Interested if I'd be the right fit for your team? Fill in this form and I will respond within 24-48 hours.</h5>
-            </div>
-            <div class="row pt-4 mt-5">
-              <div class="col-12">
-                <form action="#" method="POST">
-                  <div class="row d-flex justify-content-center">
-                    <div class="col-lg-6 text-white">
-                      <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Enter Name*" required>
-                        <label for="floatingInput">Enter Name*</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingEmail" placeholder="Enter Email*" required>
-                        <label for="floatingEmail">Enter Email*</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingPassword" placeholder="Enter Phone*" required>
-                        <label for="floatingPassword">Enter Phone*</label>
-                      </div>
-                    </div>
-                    <div class="form-floating col-lg-6">
-                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage" style="height: 205px" required></textarea>
-                      <label for="floatingMessage" class="px-4 text-white">Enter Message*</label>
-                    </div>
-                    <div class="col-12 mt-5 d-flex justify-content-center">
-                      <button class="btn btn-lg btn-outline-light">SEND MESSAGE</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-           </div>
-         </section>
-         <!-- Footer -->
-         <footer>
-          <div class="container-xxl flex-wrap pt-3 d-flex align-items-center justify-content-center justify-content-md-between text-white">
-            <p>Made by Jackson Hamel</p>
-            <ul class="social-icons d-flex">
-              <a href="#" class="nut-sack replacement1"><small><i class="fa-brands fa-twitter"></i></small></a>
-              <a href="#" class="nut-sack replacement1"><small><i class="fa-brands fa-facebook-f"></i></small></a>
-              <a href="#" class="nut-sack replacement1"><small><i class="fa-brands fa-linkedin-in"></i></small></a>
-            </ul>
-          </div>
-         </footer>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Jackson Hamel</title>
+        <meta name="description" content="Designer and Developer">
+        <link rel="canonical" href="https://jrhamel314.github.io/jrhamel.github.io/">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Jackson Hamel">
+        <meta property="og:title" content="Jackson Hamel">
+        <meta property="og:description" content="Designer and Developer">
+        <meta property="og:url" content="https://jrhamel314.github.io/jrhamel.github.io/">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="google" content="nositelinkssearchbox">
+        <meta name="google" content="notranslate">
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <div id="EnterView">
+            <div class="_t1">Jackson Hamel</div>
+            <div class="_t2">Portfolio</div>
         </div>
-         <!-- Bootstrap script link -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <div class="gradient-overlay"></div>
-      </body>
-    </html>
-
-
-<!-- 
-    <input type="checkbox" id="dark-mode">
-    <label class="light-dark" for="dark-mode"></label>
-    <div class="background"></div>
-
-    <ul class="glow">
-      <li>J</li>
-      <li>A</li>
-      <li>C</li>
-      <li>K</li>
-      <li>S</li>
-      <li>O</li>
-      <li>N</li>
-    </ul>
-    <input type="checkbox" id="active">
-    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-    <div class="wrapper">
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Feedback</a></li>
-      </ul>
-    </div> 
-  </body>
-</html> -->
+        <div id="Page">
+            <div id="Background">
+                <canvas></canvas>
+            </div>
+            <div class="mask" id="Mask">
+                <div class="mask_top"></div>
+                <div class="mask_bottom"></div>
+            </div>
+            <div class="frame" id="Frame">
+                <div class="frame_line frame_line-left"></div>
+                <div class="frame_line frame_line-right"></div>
+                <div class="frame_line frame_line-top"></div>
+                <div class="frame_line frame_line-bottom"></div>
+            </div>
+            <div class="theme" id="Theme" x-data>
+                <div class="theme_colors" @click="$store.app.toggleTheme()">
+                    <div class="theme_btn" :class="{ 'is-selected': $store.app.theme === 'light' }">
+                        <div class="_box"></div>
+                        <div class="_text">Light</div>
+                    </div>
+                    <div class="theme_btn" :class="{ 'is-selected': $store.app.theme === 'dark' }">
+                        <div class="_box"></div>
+                        <div class="_text">Dark</div>
+                    </div>
+                </div>
+                <div class="theme_btn" :class="{ 'is-selected': $store.app.fontStyle === 'mono' }" @click="$store.app.toggleFontStyle()">
+                    <div class="_box"></div>
+                    <div class="_text">Monospaced</div>
+                </div>
+            </div>
+            <header class="siteHeader" id="SiteHeader">
+                <h1 class="siteHeader_title">Jackson Hamel</h1>
+                <p class="siteHeader_label">Designer & Developer</p>
+                <nav class="siteHeader_nav" x-data>
+                    <ol>
+                        <li :class="{ 'is-selected': $store.app.currentPath === '/' }">
+                            <div class="_dot">&#x25cf;</div>
+                            <a class="_text" href="/index/">Home</a>
+                        </li>
+                        <li :class="{ 'is-selected': $store.app.currentPath === '/projects/' }">
+                            <div class="_dot">&#x25cf;</div>
+                            <a class="_text" href="/projects/">Projects</a>
+                        </li>
+                        <li :class="{ 'is-selected': $store.app.currentPath === '/info/' }">
+                            <div class="_dot">&#x25cf;</div>
+                            <a class="_text" href="/info/">Info</a>
+                        </li>
+                        <li :class="{ 'is-selected': $store.app.currentPath === '/contact/' }">
+                            <div class="_dot">&#x25cf;</div>
+                            <a class="_text" href="/contact/">Contact</a>
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+            <main class="content" id="Content" data-scroll="area">
+                <div class="content_inner" data-scroll="target">
+                    <section class="page" data-page="home">
+                        <div class="page_content home">
+                            <p class="home_aboutme">
+                                <span>Born in 2001</span>
+                                <span>in Atlanta, Georgia.</span>
+                                <span>I believe</span>
+                                <span>web design</span>
+                                <span>can be more</span>
+                                <span>diverse and inspiring.</span>
+                                <span>With a mission</span>
+                                <span>to present</span>
+                                <span>the possibilities</span>
+                                <span>of web design,</span>
+                                <span>I am pursuing</span>
+                                <span>new expressions</span>
+                                <span>through experiments</span>
+                                <span>and thoughts.</span>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="page" data-page="projects">
+                        <div class="page_content project">
+                            <div class="project_section">
+                                <h2 class="project_heading">&#x25a0;Projects (Web Design)</h2>
+                                <div class="project_list">
+                                    <a class="project_item text-btn" href="https://jrhamel314.github.io/jrhamel.github.io/" target="_blank">
+                                        <div class="project_title">Website</div>
+                                        <div class="project_info">2023 / Personal / Portfolio</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project_section">
+                                <h2 class="project_heading">&#x25a0;Projects (Python)</h2>
+                                <div class="project_list">
+                                    <a class="project_item text-btn" href="https://vortex-live.com" target="_blank">
+                                        <div class="project_title">vortex</div>
+                                        <div class="project_info">2023 / Commission / Corporate</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://reinakanishi.com" target="_blank">
+                                        <div class="project_title">REI NAKANISHI</div>
+                                        <div class="project_info">2022 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://vixi-vixi.jp" target="_blank">
+                                        <div class="project_title">VIXI</div>
+                                        <div class="project_info">2021 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://signif.jp" target="_blank">
+                                        <div class="project_title">Signif</div>
+                                        <div class="project_info">2020 / Commission / Portfolio</div>
+                                    </a>
+                                    <a class="project_item text-btn" href="https://nanameinc.jp" target="_blank">
+                                        <div class="project_title">naname</div>
+                                        <div class="project_info">2020 / Commission / Portfolio</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="page" data-page="info">
+                        <div class="page_content info">
+                            <div class="info_item info_item-1">
+                                <div class="info_content">
+                                    <ul>
+                                        <li>
+                                            <a class="text-btn" href="https://twitter.com/P5_keita" target="_blank" rel="noopener">Twitter ↗</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-btn" href="https://www.instagram.com/p5aholic/" target="_blank" rel="noopener">Instagram ↗</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info_item info_item-2">
+                                <div class="info_content">
+                                    <ul>
+                                        <li>
+                                            <a class="text-btn" href="https://experiments.p5aholic.me" target="_blank" rel="noopener">experiments.p5aholic.me ↗</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-btn" href="https://playground.p5aholic.me" target="_blank" rel="noopener">playground.p5aholic.me ↗</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info_item info_item-3">
+                                <div class="info_content">
+                                    <ul>
+                                        <li>
+                                            <span class="is-light">
+                                                Awwwards Independent of the Year<br>
+                                            </span>
+                                            <span>2020 Nominee</span>
+                                        </li>
+                                        <li>
+                                            <span class="is-light">
+                                                Awwwards Site of the Day<br>
+                                            </span>
+                                            <span>Web Graphic Experiments</span>
+                                        </li>
+                                        <li>
+                                            <span class="is-light">
+                                                Awwwards Site of the Day<br>
+                                            </span>
+                                            <span>100 DAYS OF POETRY</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="page" data-page="contact">
+                        <div class="page_content contact">
+                            <div class="contact_wrap">
+                                <a class="contact_text jp text-btn" href="https://p5aholic.notion.site/p5aholic/Web-aac658c501b8458080dcc19e5ff26e51" target="_blank" rel="noopener">制作の依頼について ↗</a>
+                                <a class="contact_text en text-btn" href="https://p5aholic.notion.site/p5aholic/Contact-f7a0724e15d44eaebddbf7f09459aef4" target="_blank" rel="noopener">Contact Form ↗</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>
