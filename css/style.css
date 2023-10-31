@@ -1,27 +1,10 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
    * colors
    */
 
-  /* gradient */
+  /* gradients */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -1261,7 +1244,9 @@ textarea.form-input::-webkit-resizer { display: none; }
    * client
    */
 
-  .clients-item { min-width: calc(33.33% - 10px); }
+  .clients-item { 
+    min-width: calc(33.33% - 10px); 
+  }
 
 
 
@@ -1769,7 +1754,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* clients */
 
-  .clients-item { min-width: calc(25% - 38px); }
+  .clients-item { 
+    min-width: calc(25% - 38px); 
+    max-width: 100px;
+  }
 
 
 
