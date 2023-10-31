@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/test.css">
+</head>
+
+<body>
+  <div id="list2" class="filter">
+    <span class="anchor">Select Year</span>
+    <ul class="years">
+      <div class="checkbox">
+        <li><input type="checkbox" id="de" rel="de" style="display: block" onchange="change();"/><label for="de" onclick="toggleCheckbox()">Dual Enrollment</label></li>
+      </div>
+      <div class="checkbox">
+        <li><input type="checkbox" id="freshman" rel="freshman" style="display: block" onchange="change();"/><label for="freshman" onclick="toggleCheckbox()">Freshman</label></li>
+      </div>
+      <div class="checkbox">
+        <li><input type="checkbox" id="sophomore" rel="sophomore" style="display: block" onchange="change();"/><label for="sophomore" onclick="toggleCheckbox()">Sophomore</label></li>
+      </div>
+      <div class="checkbox">
+        <li><input type="checkbox" id="junior" rel="junior" style="display: block" onchange="change();"/><label for="junior" onclick="toggleCheckbox()">Junior</label></li>
+      </div>
+      <div class="checkbox">
+        <li><input type="checkbox" id="senior" rel="senior" style="display: block" onchange="change();"/><label for="senior" onclick="toggleCheckbox()">Senior</label></li>
+      </div>
+    </ul>
+  </div>
+  <div id="list3" class="filter">
+    <span class="anchor">Select Level</span>
+    <ul class="levels">
+      <div class="checkbox">
+        <li><input type="checkbox" rel="1000" onchange="change();"/>1000</li>
+      </div>
+      <div class="checkbox">
+        <li><input type="checkbox" rel="2000" onchange="change();"/>2000</li>
+      </div>
+      <div class="checkbox">
+        <li><input type="checkbox" rel="3000" onchange="change();"/>3000</li>
+      </div>
+      <div class="checkbox">
+        <li><input type="checkbox" rel="4000" onchange="change();"/>4000</li>
+      </div>
+    </ul>
+  </div>
+  <div id="list4" class="filter">
+    <span class="anchor">Select Subject</span>
+    <ul class="subjects">
+      <div class="checkbox">
+        <li><input type="checkbox" rel="math" onchange="change();"/>Math</li>
+      </div>
+      <div class="checkbox">
+        <li><input type="checkbox" rel="physics" onchange="change();"/>Physics</li>
+      </div>
+      <div class="checkbox">
+        <li><input type="checkbox" rel="business" onchange="change();"/>Business</li>
+      </div>
+      <div class="checkbox">
+        <li><input type="checkbox" rel="other" onchange="change();"/>Other</li>
+      </div>
+    </ul>
+  </div>
+  <div class="result">
+    <div class="uga senior 3000 business">
+      <h1>Finance</h1>
+    </div>
+    <div class="uga senior 4000 math">
+      <h1>Numerical Analysis</h1>
+    </div>
+    <div class="uga freshman 3000 physics">
+      <h1>Modern Physics</h1>
+    </div>
+    <div class="uga junior 3000 math">
+      <h1>Sequences and Series</h1>
+    </div>
+    <div class="gsu de 3000 math">
+      <h1>Bridge to Higher Mathematics</h1>
+    </div>
+    <div class="gsu de 2000 math">
+      <h1>Differential Equations</h1>
+    </div>
+    <div class="uga sophomore 4000 math">
+      <h1>Differential Geometry</h1>
+    </div>
+    <div class="gsu de 2000 math">
+      <h1>Discrete Mathematics</h1>
+    </div>
+    <div class="uga senior 4000 math">
+      <h1>Industrial Mathematics</h1>
+    </div>
+    <div class="gsu de 2000 math">
+      <h1>Linear Algebra</h1>
+    </div>
+    <div class="uga freshman 3000 physics">
+      <h1>Math Methods in Physics</h1>
+    </div>
+  </div>
+
+  <script src="./js/test.js"></script>
+</body>

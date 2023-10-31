@@ -182,13 +182,6 @@ article {
   margin: 16px 0;
 }
 
-.separator-2 {
-  width: 100%;
-  height: 1px;
-  background: var(--jet);
-  margin: 16px 0;
-}
-
 .icon-box {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -897,7 +890,7 @@ main {
   margin-bottom: 25px;
 }
 
-
+/*
 .filter-select {
   background: var(--eerie-black-2);
   color: var(--light-gray);
@@ -911,7 +904,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
-
+*/
 
 .filter-select.active .select-icon { transform: rotate(0.5turn); }
 
@@ -1382,8 +1375,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .separator { margin: 32px 0; }
 
-  .separator-2 { margin: 0px 0; }
-
   .contacts-list { gap: 20px; }
 
   .contact-info {
@@ -1504,10 +1495,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     scroll-padding-inline: 45px;
   }
 
-  .clients-item { 
-    min-width: calc(33.33% - 35px); 
-    max-width: 100px;
-  }
+  .clients-item { min-width: calc(33.33% - 35px); }
 
 
 
@@ -1632,28 +1620,22 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     gap: 25px;
     padding-left: 5px;
     margin-bottom: 30px;
   }
 
-  .filter-item button, .filter-item input, .filter-item label {
+  .filter-item button {
     color: var(--light-gray);
     font-size: var(--fs-5);
     transition: var(--transition-1);
   }
 
-  .filter-item button:hover, .filter-item input:hover, .filter-item label:hover { color: var(--light-gray-70); }
+  .filter-item button:hover { color: var(--light-gray-70); }
 
-  .filter-item button.active { 
-    color: var(--orange-yellow-crayola); 
-  }
-
-  .filter-item input[type="checkbox"]:checked + label {
-    color: var(--orange-yellow-crayola);
-  }
+  .filter-item button.active { color: var(--orange-yellow-crayola); }
 
   /* portfolio and blog grid */
 
@@ -1915,69 +1897,60 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .filter {
-  display: flex;
+  display: none;
   position: relative;
 }
 
-/*
 .filter .anchor {
-  position: relative;
-  display: flex;
-  padding: 5px 50px 5px 10px;
+  background: var(--eerie-black-2);
+  top: calc(100% + 6px);
+  width: 100%;
+  padding: 6px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.2s ease-in-out;
+}
+
+.filter .anchor span {
   background: var(--eerie-black-2);
   color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  text-transform: capitalize;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
 }
-*/
 
-.filter label:hover {
-  cursor: pointer;
+.filter .anchor:active:after {
+  right: 8px;
+  top: 21%;
 }
 
-.filter ul.years, .filter ul.levels, .filter ul.subjects {
+.filter ul.schools, .filter ul.years, .filter ul.levels, .filter ul.subjects {
   padding: 2px;
+  display: none;
   margin: 0;
   border-top: none;
+  position: absolute;
 }
 
-.filter ul.years li, .filter ul.levels li, .filter ul.subjects li {
+.filter ul.schools li, .filter ul.years li, .filter ul.levels li, .filter ul.subjects li {
   list-style: none;
+}
+
+.filter.visible .schools, .filter.visible .years, .filter.visible .levels, .filter.visible .subjects {
+  display: block;
 }
 
 .filter.visible .anchor {
   color: var(--orange-yellow-crayola);
 }
 
-.years, .levels, .subjects {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 25px;
-  padding-left: 5px;
-  margin-bottom: 30px;
-}
-
-.filter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.anchor {
-  order: 0;
-  color: var(--light-gray);
-  font-size: var(--fs-5);
-  font-weight: bold;
-  transition: var(--transition-1);
-}
-
-.years {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-left: auto;
-}
-
-/*
 .filter span { 
   color: hsl(240, 2%, 12%);
 }
@@ -1987,4 +1960,4 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .course-select { 
   margin-bottom: 250px; 
-} */
+}

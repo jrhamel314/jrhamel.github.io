@@ -138,6 +138,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+/*
 function change() {
   var schoolCbs = document.querySelectorAll(".schools input[type='checkbox']");
   var yearCbs = document.querySelectorAll(".years input[type='checkbox']");
@@ -264,8 +265,92 @@ function filterResults(filters) {
   }
 }
 
-function toggleCheckbox(id) {
-  var checkbox = document.getElementById(id);
-  checkbox.checked = !checkbox.checked;
-  change();
+var checkList1 = document.getElementById("list1");
+checkList1.getElementsByClassName("anchor")[0].onclick = function (evt) {
+  if (checkList1.classList.contains("visible"))
+    checkList1.classList.remove("visible");
+  else checkList1.classList.add("visible");
+};
+
+var checkList2 = document.getElementById("list2");
+checkList2.getElementsByClassName("anchor")[0].onclick = function (evt) {
+  if (checkList2.classList.contains("visible"))
+    checkList2.classList.remove("visible");
+  else checkList2.classList.add("visible");
+};
+
+var checkList3 = document.getElementById("list3");
+checkList3.getElementsByClassName("anchor")[0].onclick = function (evt) {
+  if (checkList3.classList.contains("visible"))
+    checkList3.classList.remove("visible");
+  else checkList3.classList.add("visible");
+};
+
+var checkList4 = document.getElementById("list4");
+checkList4.getElementsByClassName("anchor")[0].onclick = function (evt) {
+  if (checkList4.classList.contains("visible"))
+    checkList4.classList.remove("visible");
+  else checkList4.classList.add("visible");
+};
+*/
+
+// Filter variables
+
+// Select filter items and buttons
+
+// Select filter items and buttons
+const itemElements = document.querySelectorAll("[data-filter-item2]");
+const filterButtons = document.querySelectorAll("[data-filter-button]");
+const selectedCriteriaDisplay = document.querySelector(".selected-criteria");
+
+const selectedCategories = {
+  category: [],
+  level: [],
+  subject: [],
+}; // Store selected criteria for each category
+
+const applyFilters = function () {
+  for (let i = 0; i < itemElements.length; i++) {
+    const itemData = itemElements[i].dataset;
+    const isMatching =
+      (selectedCategories.category.length === 0 ||
+        selectedCategories.category.includes(itemData.category)) &&
+      (selectedCategories.level.length === 0 ||
+        selectedCategories.level.includes(itemData.level)) &&
+      (selectedCategories.subject.length === 0 ||
+        selectedCategories.subject.includes(itemData.subject));
+
+    if (isMatching) {
+      itemElements[i].classList.add("visible");
+    } else {
+      itemElements[i].classList.remove("visible");
+    }
+  }
+};
+
+// Add click event listeners to filter buttons
+for (let i = 0; i < filterButtons.length; i++) {
+  filterButtons[i].addEventListener("click", function () {
+    const clickedCriteria = this.innerText.toLowerCase();
+    const category = this.dataset.category;
+
+    // Toggle clickedCriteria in the appropriate category array
+    const categoryArray = selectedCategories[category];
+    if (clickedCriteria === "all") {
+      categoryArray.length = 0; // Clear the array
+    } else {
+      const index = categoryArray.indexOf(clickedCriteria);
+      if (index === -1) {
+        categoryArray.push(clickedCriteria);
+      } else {
+        categoryArray.splice(index, 1);
+      }
+    }
+
+    selectedCriteriaDisplay.innerText = Object.values(selectedCategories)
+      .flat()
+      .join(", "); // Update displayed criteria
+
+    applyFilters(); // Apply filters based on the selected criteria
+  });
 }
