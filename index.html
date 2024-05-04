@@ -35,7 +35,7 @@
         </figure>
         <div class="info-content">
           <h1 class="name" title="Jackson Hamel">Jackson Hamel</h1>
-          <p class="title">Student</p>
+          <p class="title">Student / Financial Advisor</p>
         </div>
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
@@ -154,6 +154,18 @@
                 <h4 class="h4 service-item-title">Front-end Development</h4>
                 <p class="service-item-text">
                   Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly interfaces, and using modern frameworks like ReactJS.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./images/investment.svg
+                " alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Financial Advising</h4>
+                <p class="service-item-text">
+                  I meet with clients to assess their financial needs, develop a customized financial plan to address their goals, maintain strong relationships with clients, and help them to track their progress over time.
                 </p>
               </div>
             </li>
@@ -292,7 +304,7 @@
           - clients
         -->
         <section class="clients">
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 clients-title">Work</h3>
           <ul class="clients-list has-scrollbar">
             <li class="clients-item">
               <a href="#">
@@ -302,6 +314,11 @@
             <li class="clients-item">
               <a href="#">
                 <img src="./images/peak.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./images/GFA.png" alt="client logo">
               </a>
             </li>
           </ul>
@@ -355,8 +372,13 @@
           </div>
           <ol class="timeline-list">
             <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Financial Advising</h4>
+              <span>Present</span>
+              <p class="timeline-text"> I meet with clients to assess their financial needs, develop a customized financial plan to address their goals, maintain strong relationships with clients, and help them to track their progress over time. </p>
+            </li>
+            <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Academic Coaching</h4>
-              <span>2022 — Present</span>
+              <span>2022 — 2024</span>
               <p class="timeline-text"> I specialize in helping students improve their overall academic performance by coaching them in the development of academic and non-academic skill sets that will empower them to succeed in all areas of their academic careers. </p>
             </li>
             <li class="timeline-item">
@@ -430,6 +452,23 @@
             </li>
           </ul>
         </section>
+        <section class="quals">
+          <h3 class="h3 quals-title">Qualifications</h3>
+          <div class="award-row">
+            <div class="award-column h3">
+              <p><u>Licenses</u></p>
+              <ul class="h5-2">
+                <li><b>SIE: </b>Securities Industry Essentials</li>
+              </ul>
+            </div>
+            <div class="award-column h3">
+              <p><u>Certifications</u></p>
+              <ul class="h5-2">
+                <li>Responsive Web Design</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </article>
       <!--
         - #PORTFOLIO
@@ -451,6 +490,9 @@
             </li>
             <li class="filter-item">
               <button data-filter-btn>For Fun</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Finance</button>
             </li>
           </ul>
           <!--Stupid and Useless-->
@@ -474,10 +516,25 @@
               <li class="select-item">
                 <button data-select-item>For Fun</button>
               </li>
+              <li class="select-item">
+                <button data-select-item>Finance</button>
+              </li>
             </ul>
           </div>
           <!--End of Stupid and Useless-->
           <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="finance">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./images/sharpe.png" alt="example" loading="lazy">
+                </figure>
+                <h3 class="project-title">Stock Selection & Allocation - Sharpe Ratio Optimization</h3>
+                <p class="project-category">Finance</p>
+              </a>
+            </li>
             <li class="project-item  active" data-filter-item data-category="for fun">
               <a href="#">
                 <figure class="project-img">
@@ -654,7 +711,7 @@
             </div>
           </ul>
         </div>
-        <div class="separator"></div>
+        <div class="separator-3"></div>
         <div class="result project-list">
           <div class="uga senior 3000 business">
             <li class="project-item  active">
@@ -663,11 +720,38 @@
               <p class="project-category">Business</p>
             </li>
           </div>
+          <div class="uga senior 4000 business">
+            <div class="uga senior 4000 business">
+              <li class="project-item  active">
+                <h3 class="project-title">Survey of Investments</h3>
+                <p class="project-label">FINA 4310</p>
+                <p class="project-category">Business</p>
+              </li>
+            </div>
+          </div>
+          <div class="uga senior 4000 math">
+            <div class="uga senior 4000 math">
+              <li class="project-item  active">
+                <h3 class="project-title">Partial Differential Equations</h3>
+                <p class="project-label">MATH 4720</p>
+                <p class="project-category">Math</p>
+              </li>
+            </div>
+          </div>
           <div class="uga senior 4000 math">
             <div class="uga senior 4000 math">
               <li class="project-item  active">
                 <h3 class="project-title">Numerical Analysis</h3>
                 <p class="project-label">MATH 4500</p>
+                <p class="project-category">Math</p>
+              </li>
+            </div>
+          </div>
+          <div class="uga senior 4000 math">
+            <div class="uga senior 4000 math">
+              <li class="project-item  active">
+                <h3 class="project-title">Numerical Analysis II</h3>
+                <p class="project-label">MATH 6510 (4510)</p>
                 <p class="project-category">Math</p>
               </li>
             </div>
@@ -782,231 +866,6 @@
           </div>
         </div>
       </section>
-         <!--
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Dual Enrollment</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Freshman</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Sophomore</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Junior</button>
-            </li>
-            <li style="float: right;" class="filter-item">
-              <button data-filter-btn>Senior</button>
-            </li>
-          </ul>
-
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button data-filter-btn>1000</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>2000</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>3000</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>4000</button>
-            </li>
-          </ul>
-
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button data-filter-btn>Math</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Physics</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Business</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Other</button>
-            </li>
-          </ul>
-          <div class="separator"></div>
-          <!--Stupid and Useless--><!--
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Dual Enrollment</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Freshman</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Sophomore</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Junior</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Senior</button>
-              </li>
-            </ul>
-
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>1000</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>2000</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>3000</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>4000</button>
-              </li>
-            </ul>
-
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>Math</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Physics</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Business</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Other</button>
-              </li>
-            </ul>
-
-          </div>
-          <!--End of Stupid and Useless--><!--
-          <ul class="project-list">
-            <li class="project-item  active" data-filter-item data-category="math, 4000">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Industrial Mathematics</h3>
-                <p class="project-label">MATH 4950</p>
-                <p class="project-category">Math</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="math">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Numerical Analysis</h3>
-                <p class="project-label">MATH 4500</p>
-                <p class="project-category">Math</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="business">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Finance</h3>
-                <p class="project-label">FINA 3001</p>
-                <p class="project-category">Business</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="physics">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Modern Physics</h3>
-                <p class="project-label">PHYS 3700</p>
-                <p class="project-category">Physics</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="math">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Sequences and Series</h3>
-                <p class="project-label">MATH 3200</p>
-                <p class="project-category">Math</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="math">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Bridge to Higher Mathematics</h3>
-                <p class="project-label">MATH 3000</p>
-                <p class="project-category">Math</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="business">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Financial Accounting</h3>
-                <p class="project-label">ACCT 2101</p>
-                <p class="project-category">Business</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="physics">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Math Methods in Physics</h3>
-                <p class="project-label">PHYS 3900</p>
-                <p class="project-category">Physics</p>
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="for fun">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Differential Equations</h3>
-                <p class="project-label">MATH 2700</p>
-                <p class="project-category">Math</p>
-              </a>
-            </li>
-          </ul>
-        </section>-->
       </article>
       <!--
         - #BLOG
